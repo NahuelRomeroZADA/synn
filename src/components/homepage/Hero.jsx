@@ -11,18 +11,8 @@ const Hero = () => {
             opacity: 0,
             y: 150,
             repeat: 0,
-            duration: 1.5,
+            duration: 4,
             ease: 'power4.inOut',
-        })
-    }, [])
-
-    useGSAP (() => {
-        gsap.from("#heroImg", {
-            opacity: 0,
-            scale: 4,
-            repeat: 0,
-            duration: 2,
-            ease: 'power2.inOut',
         })
     }, [])
 
