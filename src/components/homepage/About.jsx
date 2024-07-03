@@ -10,7 +10,7 @@ export default function About() {
     // Try using max width to contain the size of the container
     <section  aria-label="about me">
       <Heading title="about me"/>
-      <div className=" p-5 mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 sm:p-8 2xl:p-20 ">
+      <div className="mt-10 flex flex-col items-start gap-8 md:flex-row lg:gap-10 sm:p-8 2xl:p-20 ">
         <div className="top-28 overflow-hidden rounded-md md:sticky md:w-1/2">
           <img
             src={profileImg}
@@ -25,11 +25,11 @@ export default function About() {
           <div className="w-full space-y-4 2xl:space-y-10 text-secondary-200">
             <h3
               
-              className=" text-heading-3 2xl:text-7xl font-semibold leading-tight "
+              className="text-secondary-700 text-heading-3 2xl:text-7xl font-semibold leading-tight "
             >
               A brief intro, who am I?
             </h3>
-            <p  className="  text-body-1 2xl:text-4xl ">
+            <p  className=" text-accent-400 font-Satoshi text-body-1 2xl:text-4xl ">
               I am an independent frontend developer, UI/UX designer and creator based in
               Melbourne, Australia.
               <br></br>

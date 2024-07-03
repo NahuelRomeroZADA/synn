@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body, html{
+  cursor: none;
+}
+a, button{
+  cursor: none;
+}
 @layer base {
     ::-moz-selection {
         background: #D1D1C7
@@ -58,3 +63,5 @@
     opacity: 0;
     
   }}
+
+ 

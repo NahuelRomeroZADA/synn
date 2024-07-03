@@ -1,11 +1,16 @@
-
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import { useEffect,useRef } from "react";
 
 
 
 const Navbar = () => {
-    
+    // const navBar = useRef(null);
+    // const logo = useRef(null)
+    // gsap.registerPlugin(ScrollTrigger)
+
+
     useGSAP (() => {
         gsap.from("header", {
             y: -150,
@@ -15,13 +20,30 @@ const Navbar = () => {
             ease: 'power4.inOut',
         })
     }, [])
-    
+    // useEffect(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
+    //     if(navBar.current){
+    //         gsap.to(navBar.current,{
+    //         background: "#0E0E0C",
+    //         duration: 1,
+    //         ease: 'power4.inOut',
+    //         scrollTrigger: {
+    //             trigger: navBar.current,
+    //             start: "top 50%",
+    //             bottom: "bottom bottom",
+    //             scrub: 0.8,
+    //             markers: true,
+    //         }
+    //     })
+    //     }
+    // })
+   
 
 
 
   return (
     
-    <header className=" bg-[#ffffff] fixed top-0 z-50 flex w-full items-center justify-between px-5 py-3 ">
+    <header  className=" bg-[#ffffff] fixed top-0 z-50 flex w-full items-center justify-between px-5 py-3 ">
         <a href="#hero" aria-label="logo" className="z-50">
         
         <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -3844,7 +3866,7 @@ l-70 88 6 59 c7 56 -4 80 -18 43z"/>
 </g>
         </svg>
         </a>
-        <nav className="space-x-7 font-switzer text-body-3 sm:block uppercase">
+        <nav className="space-x-7 font-switzer text-body-3 sm:block ">
             <a href="#about" className="group relative hidden md:inline-block">
                 <span>about</span>
                 <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>

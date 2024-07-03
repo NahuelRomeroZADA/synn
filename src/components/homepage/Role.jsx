@@ -18,7 +18,7 @@ export default function Role() {
         {
           opacity: 1,
           y: 0, // Animar a su posición natural
-          duration: 2,
+          duration: 1,
           ease: 'power4.inOut',
           scrollTrigger: {
             trigger: h1Ref.current,
@@ -50,7 +50,7 @@ export default function Role() {
   
   
   return (
-      <section ref={secRef} id="about" className="select-none flex my-20 md:my-[12%] py-10 p-5 2xl:p-20 flex-col items-center justify-center overflow-hidden nav-change" aria-label="">
+      <section ref={secRef} id="about" className=" select-none flex my-20 md:my-[12%] py-10 flex-col items-center justify-center overflow-hidden nav-change" aria-label="">
         <div className="flex w-full items-center space-x-20">
           <h1 ref={h1Ref} className=" text-heading-1 font-medium text-secondary-400 leading-[1.25em] md:leading-[1.08em]">
           I create elevating digital experiences that inspire and connect with people through development and design.
